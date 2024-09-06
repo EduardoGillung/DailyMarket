@@ -11,12 +11,10 @@ Market shop website
 
 <div align="center"><strong>Built with the React + TypeScript + Vite</strong></div>
 
-<div align="center">Currently, two official plugins are available:
+<div>
+      Currently, two official plugins are available:
       @vitejs/plugin-react uses Babel for Fast Refresh
       @vitejs/plugin-react-swc uses SWC for Fast Refresh
-      <br />
-<div align="center">
- 
 </div>
 
 
