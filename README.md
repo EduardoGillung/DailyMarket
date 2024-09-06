@@ -1,6 +1,6 @@
 ## DailyMarket
 
-Market shop website 
+A market website 
 
 ## Features
 <div>
