@@ -3,12 +3,12 @@
 Market shop website 
 
 ## Features
-
->User features/Registration/Profiles
->Search/Sort/Filter/Pagination
->Manage Restaurant & Image upload
->Live order status
-
+<div>
+User features/Registration/Profiles
+Search/Sort/Filter/Pagination
+Manage Restaurant & Image upload
+Live order status
+</div>
 <div align="center"><strong>Built with the React + TypeScript + Vite</strong></div>
 
 <div>
