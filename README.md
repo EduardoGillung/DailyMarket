@@ -1,6 +1,6 @@
 ## DailyMarket
 
-A market website 
+DailyMarket is a web platform designed to help users find and place orders with markets near their location. Aimed at connecting consumers with local markets in a convenient and efficient manner, DailyMarket allows users to locate nearby markets, browse their product offerings, and place orders directly through the site.
 
 ## Features
 <div>
@@ -37,12 +37,14 @@ To run the project on your machine follow these steps:
 
     npm run dev
 
-
-
 </div>
 
 
+## Contributing
+Feel free to contribute improvements and fixes! Check out the CONTRIBUTING.md for more details on how you can help.
 
-```
+## License
+This project is licensed under the MIT License.
+
 
 ```
