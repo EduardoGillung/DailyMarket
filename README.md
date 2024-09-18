@@ -36,8 +36,6 @@ To run the project on your machine follow these steps:
 </div>
 
 
-## Contributing
-Feel free to contribute improvements and fixes! Check out the CONTRIBUTING.md for more details on how you can help.
 
 ## License
 This project is licensed under the MIT License.
