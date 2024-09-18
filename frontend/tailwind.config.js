@@ -1,3 +1,5 @@
+import { Moon } from 'lucide-react';
+
 /** @type {import('tailwindcss').Config} */
 export default {
     darkMode: ["class"],
@@ -52,8 +54,21 @@ export default {
   				'3': 'hsl(var(--chart-3))',
   				'4': 'hsl(var(--chart-4))',
   				'5': 'hsl(var(--chart-5))'
-  			}
-  		}
+  			},
+			// Inserindo as suas cores principais personalizadas
+			dailyPrimary: '#7A882A', // Cor personalizada 1
+			dailySecondary: '#504D23', // Cor personalizada 2
+			dailyTertiary: '#D7C59F', // Cor personalizada 3
+			CustomGrey: '#373737', //Cor 4
+  		},
+		  fontFamily: {
+			// Adicione sua fonte personalizada aqui
+			sans: ['Roboto', 'sans-serif'], // Exemplo com 'Roboto'
+			slab: ['Roboto Slab'],
+			serif:['Roboto Serif'],
+			mono: ['Roboto Mono'],
+
+		  },
   	}
   },
   plugins: [require("tailwindcss-animate")],
