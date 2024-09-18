@@ -37,8 +37,4 @@ To run the project on your machine follow these steps:
 
 
 
-## License
-This project is licensed under the MIT License.
-
-
 ```
