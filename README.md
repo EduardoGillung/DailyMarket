@@ -35,6 +35,3 @@ To run the project on your machine follow these steps:
 
 </div>
 
-
-
-```
