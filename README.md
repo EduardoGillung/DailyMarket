@@ -22,8 +22,8 @@ User features/Registration/Profiles Search/Sort/Filter/Pagination Manage Restaur
 
 - Framework - [ReactJS (App Router)](https://reactnative.dev/)
 - Language - [TypeScript](https://www.typescriptlang.org/)
-- Auth - []()
-- Database - [](
+- Auth - [Auth0](https://auth0.com/)
+- Database - [MongoDB ](https://www.mongodb.com/pt-br)
 - Styling - [TailwindCSS]([https://styled-components.com/](https://tailwindcss.com/))
 - Components - [Node.JS](https://nodejs.org/pt),[Vite](https://vitejs.dev/)
 
