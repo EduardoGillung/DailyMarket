@@ -11,11 +11,7 @@ User features/Registration/Profiles Search/Sort/Filter/Pagination Manage Restaur
 
 <h2><strong>Built with the React + TypeScript + Vite</strong></h2>
 
-<div>
-      Currently, two official plugins are available:
-      @vitejs/plugin-react uses Babel for Fast Refresh
-      @vitejs/plugin-react-swc uses SWC for Fast Refresh
-</div>
+
 
 
 ## Overview
