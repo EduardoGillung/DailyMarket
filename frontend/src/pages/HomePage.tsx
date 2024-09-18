@@ -17,7 +17,7 @@ const HomePage = () => {
                     Faça seus pedidos de qualquer lugar!
                 </span>
                 <span className=" text-CustomGrey font-slab text-xl">
-                    Instale o DailyMarket no seu celular e faça pedidos ainda mais rápido ainda!
+                    Instale o DailyMarket no seu celular e faça pedidos ainda mais rápido!
                 </span>
                 <img src={appDownload} />
             </div>

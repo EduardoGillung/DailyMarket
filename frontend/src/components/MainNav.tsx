@@ -7,7 +7,7 @@ const MainNav = () => {
             variant="ghost" 
             className="font-bold hover:text-dailyPrimary hover:bg-white text-CustomGrey"
         >
-          Log In
+          Conectar conta
         </Button>
     );
 };
