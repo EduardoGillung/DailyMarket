@@ -24,7 +24,7 @@ User features/Registration/Profiles Search/Sort/Filter/Pagination Manage Restaur
 - Language - [TypeScript](https://www.typescriptlang.org/)
 - Auth - [Auth0](https://auth0.com/)
 - Database - [MongoDB ](https://www.mongodb.com/pt-br)
-- Styling - [TailwindCSS]([https://styled-components.com/](https://tailwindcss.com/))
+- Styling - [TailwindCSS](https://tailwindcss.com/)
 - Components - [Node.JS](https://nodejs.org/pt),[Vite](https://vitejs.dev/)
 
 
