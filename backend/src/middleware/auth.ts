@@ -1,3 +1,4 @@
+import { Request, Response, NextFunction } from "express";
 import { auth } from "express-oauth2-jwt-bearer";
 
 //Check the authorization token
@@ -8,4 +9,10 @@ export const jwtCheck = auth({
   });
 
  
+  export const jwtParse = async(
+    req: Request, 
+    res: Response, 
+    next: NextFunction) => {
+
+  }
   
