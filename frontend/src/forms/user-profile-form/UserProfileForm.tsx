@@ -1,7 +1,7 @@
 import { useForm } from "react-hook-form";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { Form, FormControl, FormDescription, FormField, FormItem, FormLabel } from "@/components/ui/form";
+import { Form, FormControl, FormDescription, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import LoadingButton from "@/components/LoadingButton";
@@ -17,13 +17,20 @@ const formSchema = z.object({
 type UserFormData = z.infer<typeof formSchema>;
 
 type Props = {
-    onSave: (userProfileForm: UserFormData)=> void;
+    onSave: (userProfileData: UserFormData) => void;
     isLoading: boolean;
 };
 
 const UserProfileForm = ({ onSave, isLoading }: Props) => {
     const form = useForm<UserFormData>({
         resolver: zodResolver(formSchema),
+        defaultValues: {
+          email: '', // Valores iniciais para não retorarem undefined 
+          name: '', 
+          addressLine1: '',
+          city: '',
+          country: '',
+      }
     });
 
     return(
@@ -33,32 +40,34 @@ const UserProfileForm = ({ onSave, isLoading }: Props) => {
               className="space-y-4 bg-gray-50 rounded-lg md:p-10"
             >
                 <div>
-                    <h2 className="text-2xl font-bold">User Profile Form</h2>
+                    <h2 className="text-2xl font-bold">Perfil do Usúario</h2>
                     <FormDescription>
-                        View and change your profile information here
+                      Suas informações ficam aqui caso deseje é possivel altera-lás.
                     </FormDescription>
                 </div>
                   <FormField 
                     control={form.control} 
                     name="email" 
-                    render={({field})=> (
+                    render={({ field })=> (
                       <FormItem className="flex-1">
-                        <FormLabel>Email</FormLabel>
+                        <FormLabel>E-mail</FormLabel>
                         <FormControl>
-                            <Input {...field} className="bg-white" />
+                            <Input {...field} className="bg-white"/>
                         </FormControl>
+                        <FormMessage />
                       </FormItem>
                     )}
                 />
                 <FormField 
                     control={form.control} 
                     name="name" 
-                    render={({field})=> (
+                    render={({ field })=> (
                       <FormItem className="flex-1">
-                        <FormLabel>Name</FormLabel>
+                        <FormLabel>Nome</FormLabel>
                         <FormControl>
                             <Input {...field} className="bg-white" />
                         </FormControl>
+                        <FormMessage />
                       </FormItem>
                     )}
                 />
@@ -67,12 +76,13 @@ const UserProfileForm = ({ onSave, isLoading }: Props) => {
                 <FormField 
                     control={form.control} 
                     name="addressLine1" 
-                    render={({field})=> (
+                    render={({ field })=> (
                       <FormItem className="flex-1">
-                        <FormLabel>Address Line 1</FormLabel>
+                        <FormLabel>Endereço</FormLabel>
                         <FormControl>
                             <Input {...field} className="bg-white" />
                         </FormControl>
+                        <FormMessage />
                       </FormItem>
                     )}
                     />
@@ -80,24 +90,26 @@ const UserProfileForm = ({ onSave, isLoading }: Props) => {
                 <FormField 
                     control={form.control} 
                     name="city" 
-                    render={({field})=> (
+                    render={({ field })=> (
                       <FormItem className="flex-1">
-                        <FormLabel>City</FormLabel>
+                        <FormLabel>Cidade</FormLabel>
                         <FormControl>
                             <Input {...field} className="bg-white" />
                         </FormControl>
+                        <FormMessage />
                       </FormItem>
                     )}
                     />
                 <FormField 
                     control={form.control} 
                     name="country" 
-                    render={({field})=> (
+                    render={({ field})=> (
                       <FormItem className="flex-1">
-                        <FormLabel>Country</FormLabel>
+                        <FormLabel>País</FormLabel>
                         <FormControl>
                             <Input {...field} className="bg-white" />
                         </FormControl>
+                        <FormMessage />
                       </FormItem>
                     )}
                     />  
@@ -105,7 +117,7 @@ const UserProfileForm = ({ onSave, isLoading }: Props) => {
                     {isLoading ? (<LoadingButton />
                 ) : (
                     <Button type="submit" className="bg-dailyPrimary">
-                        Submit
+                        Salvar
                     </Button>
                 )}
             </form>

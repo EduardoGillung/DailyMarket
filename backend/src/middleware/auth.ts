@@ -31,12 +31,12 @@ export const jwtCheck = auth({
       return res.sendStatus(401);
     }
     //bearer lsdk453ldkclsd1ck45sdlcsdc2c
-    const token = authorization.split("")[1];
+    const token = authorization.split(" ")[1];
 
     try {
       const decoded = jwt.decode(token) as jwt.JwtPayload;
       const auth0Id = decoded.sub;
-      next();
+      
 
       const user = await User.findOne({ auth0Id });
 
@@ -46,9 +46,9 @@ export const jwtCheck = auth({
 
         req.auth0Id = auth0Id as string;
         req.userId = user._id.toString();
-
+        next();
     } catch (error) {
-      return res.sendStatus(401);
+      return res.status(401).json({ message: "Failed to authenticate token" });
     }
   };
   

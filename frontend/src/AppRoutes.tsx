@@ -21,7 +21,9 @@ const AppRoutes = () => {
                 element={
                   <Layout>
                     <UserProfilePage />
-                  </Layout>} />
+                  </Layout>
+                } 
+            />
                   
             <Route path="*" element={<Navigate to="/" />} />
         </Routes>
