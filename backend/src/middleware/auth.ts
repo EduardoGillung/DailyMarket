@@ -47,6 +47,7 @@ export const jwtCheck = auth({
         req.auth0Id = auth0Id as string;
         req.userId = user._id.toString();
         next();
+        
     } catch (error) {
       return res.status(401).json({ message: "Failed to authenticate token" });
     }
